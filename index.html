@@ -78,29 +78,23 @@
 
       if (selectedUnit === 'celsius') {
         fahrenheit = (temperatureInput * 9/5) + 32;
-        kelvin = temperatureInput + 273.15;
-        //Celsius = temperatureInput;
+        kelvin = temperatureInput + 273.15; 
         const outputLabel = `In Fahrenheit: ${fahrenheit.toFixed(2)} °F   |  In Kelvin: ${kelvin.toFixed(2)} K`;
         document.getElementById('outputLabel').textContent = outputLabel;
         
       } else if (selectedUnit === 'fahrenheit') {
         Celsius = (temperatureInput-32)*(5/9);
         kelvin = (temperatureInput - 32) * 5/9 + 273.15;
-       // fahrenheit = temperatureInput;
        const outputLabel = `In Kelvin: ${kelvin.toFixed(2)} K  | In Celsius: ${Celsius.toFixed(2)} °C `;
        document.getElementById('outputLabel').textContent = outputLabel;
 
       } else if (selectedUnit === 'kelvin') {
         fahrenheit = (temperatureInput - 273.15) * 9/5 + 32;
-        Celsius = temperatureInput - 273.15;
-        //kelvin = temperatureInput;
+        Celsius = temperatureInput - 273.15; 
         const outputLabel = `In Fahrenheit: ${fahrenheit.toFixed(2)} °F   |  In Celsius: ${Celsius.toFixed(2)} °C `;
         document.getElementById('outputLabel').textContent = outputLabel;
 
       }
-
-      //const outputLabel = `In Fahrenheit: ${fahrenheit.toFixed(2)}°F | In Kelvin: ${kelvin.toFixed(2)}K | In Celsius: ${Celsius.toFixed(2)}°C `;
-      //document.getElementById('outputLabel').textContent = outputLabel;
     }
   </script>
 </body>
